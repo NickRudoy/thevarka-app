@@ -1,0 +1,118 @@
+.home__container {
+    width: 860px;
+    height: 330px;
+  }
+  .home__card {
+    display: grid;
+    background-color: #EBC156;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    /* border-radius: 1.5rem; */
+    margin-bottom: var(--mb-3);
+  }
+  
+  .home__img {
+    position: absolute;
+    width: 208px;
+    height: 215px;
+    right: 3rem;
+    top: 3rem;
+  }
+  
+  .home__name {
+    font-size: 40px;
+    width: 490px;
+    font-weight: var(--font-medium);
+    color: #000;
+    margin-bottom: var(--mb-0-25);
+  }
+  
+  .home__button {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: var(--small-font-size);
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* Swiper */
+  .swiper-pagination-bullet {
+    background-color: #fff !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgba(102, 84, 38, 0.3) !important;
+  }
+  /*=============== BREAKPOINTS ===============*/
+  /* For large devices */
+  @media screen and (max-width: 992px) {
+    .home__container {
+      width: initial;
+    }
+    .home__card {
+      padding: 1.25rem 1.5rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .home__img{
+        width: 175px;
+        height: 165px;
+        top: 5rem;
+    }
+    .home__name {
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .home__container {
+        height: 300px;
+    }
+    .home__img {
+        width: 170px;
+        height: 165px;
+        right: 0;
+    }
+    .home__name {
+        font-size: 24px;
+        width: 300px;
+    }
+    .home__button{
+        margin-top: 0;
+        width: 150px;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 425px) {
+    .home__name {
+        font-size: 20px;
+        width: 250px;
+    }
+    .home__img {
+        width: 150px;
+        height: 140px;
+        right: 0;
+        top: 6rem;
+    }
+    .home__button{
+        margin-top: 0;
+        width: 150px;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .home__container {
+        height: 270px;
+    }
+    .home__button{
+        margin-top: 0;
+        width: 100px;
+    }
+  }

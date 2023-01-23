@@ -1,0 +1,19 @@
+.quote {
+    background-color: var(--container-color);
+}
+.quote__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.quote__title {
+    color: var(--body-color);
+    text-transform: uppercase;
+    font-style: italic;
+}
+.quote__img {
+    width: 116px;
+    height: 116px;
+}
